@@ -1,0 +1,107 @@
+@import url("normalize.css");
+
+@font-face {
+  font-family: Ronzino;
+  src: url(fonts/Ronzino-Regular.woff2);
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    color: white;
+    position: relative;
+    font-family: "Ronzino", sans-serif;
+    font-size: 1rem;
+    line-height: 1.45;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    padding: .4rem .8rem;
+    background-color: #7F39FB;
+    color: white;
+    border-radius: 1000px;
+    font-size: .85rem;
+}
+
+.button:hover{
+    background-color: #6200EE;
+}
+
+.button:active{
+    background-color: #30009C;
+}
+
+/* Riquadro in basso, centrato */
+.overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  
+}
+
+li a {
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+li a:hover {
+  background-color: #F2E7FE;
+  text-decoration: none;
+}
+
+li a.active {
+    background-color: #F2E7FE;
+  color: #7F39FB;
+  font-weight: bold;
+}
+
+/* Riquadro CV in alto a sinistra */
+.cv-box {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #222;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  max-width: 65ch;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  backdrop-filter: blur(6px);
+}
+
+.cv-box h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
